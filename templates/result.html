@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Résultats du TSP</title>
+  </head>
+  <body>
+    <h1>Résultats du problème du voyageur de commerce (TSP)</h1>
+
+    <h2>Solution Heuristique (Hill Climbing)</h2>
+    <table border="1">
+      <tr>
+        <th>Cycle</th>
+        <th>Coût</th>
+        <th>Temps</th>
+      </tr>
+      <tr>
+        <td>{{ heuristic_cycle }}</td>
+        <td>{{ heuristic_cost }}</td>
+        <td>{{ heuristic_time }}</td>
+      </tr>
+    </table>
+
+    <h2>Solution Exacte</h2>
+    <table border="1">
+      <tr>
+        <th>Cycle</th>
+        <th>Coût</th>
+        <th>Temps</th>
+      </tr>
+      <tr>
+        <td>{{ exact_cycle }}</td>
+        <td>{{ exact_cost }}</td>
+        <td>{{ exact_time }}</td>
+      </tr>
+    </table>
+
+    <a href="/">Retour à l'accueil</a>
+  </body>
+</html>
